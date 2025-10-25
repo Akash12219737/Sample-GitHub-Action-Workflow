@@ -14,7 +14,7 @@ jobs:
             - name: "Running on master push" # Step 1
               run: echo "Running on astr push/ multievent pipeline"    
     on-pull-request:
-        runs-on: ubutnu-latest
+        runs-on: ubuntu-latest
         steps: 
             - name: "Running on pull request"  
               run: echo "Running on pull request"  
