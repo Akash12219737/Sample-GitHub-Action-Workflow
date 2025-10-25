@@ -6,7 +6,10 @@ on:
             - test
     pull_request: 
         branches:
-            - master        
+            - master    
+    workflow_dispatch:
+        
+        
 jobs: 
     on-push: # Job name
         if: github.event_name == 'push'
