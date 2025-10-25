@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - test
+      - newtest   # add your branch if needed
 
   pull_request:
     branches:
@@ -19,8 +20,8 @@ jobs:
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
-      - name: "Running on master or test push"
-        run: echo "Running on master/test push - multi event pipeline"
+      - name: "Running on push"
+        run: echo "Running on push event"
 
   on-pull-request:
     if: github.event_name == 'pull_request'
