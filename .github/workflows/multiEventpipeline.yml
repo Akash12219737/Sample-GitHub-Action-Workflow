@@ -9,11 +9,13 @@ on:
             - master        
 jobs: 
     on-push: # Job name
+        if: github.event_name == 'push'
         runs-on: ubuntu-latest
         steps: # Steps to be executed in the job
             - name: "Running on master push" # Step 1
               run: echo "Running on astr push/ multievent pipeline"    
     on-pull-request:
+        if: github.event_name == 'pull_reuest'
         runs-on: ubuntu-latest
         steps: 
             - name: "Running on pull request"  
