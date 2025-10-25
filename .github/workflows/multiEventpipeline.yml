@@ -10,4 +10,5 @@ jobs:
         runs-on: ubuntu-latest
         steps: # Steps to be executed in the job
             - name: "Running on master push" # Step 1
-              run: echo "Running on astr push"             
+              run: echo "Running on astr push/ multievent pipeline"    
+               
